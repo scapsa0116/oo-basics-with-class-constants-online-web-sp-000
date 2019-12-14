@@ -12,6 +12,6 @@ BRANDS = []
   end
  
    brands.each do |brand|
-        Shoe.new(brand)
+        expect(Shoe::BRANDS).to include(brand)
     end
 end

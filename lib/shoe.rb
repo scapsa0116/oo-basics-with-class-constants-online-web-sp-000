@@ -11,7 +11,7 @@ BRANDS = []
     puts "Your shoe is as good as new!"
   end
  
-   brands.each do |brand|
-        expect(Shoe::BRANDS).to include(brand)
+   brand.each do |brands|
+        expect(Shoe::BRANDS).to include(brands)
     end
 end

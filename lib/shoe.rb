@@ -5,13 +5,17 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    BRANDS.include? (brand)
+    if BRANDS !include? (brand)
+      BRANDS << brand
   end
+end
 
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
- BRANDS.include? "brand"
+
  
   
 end

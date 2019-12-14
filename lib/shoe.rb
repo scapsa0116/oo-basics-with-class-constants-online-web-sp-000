@@ -12,7 +12,4 @@ BRANDS = []
   end
  
   
-   brand.each do |brands|
-        expect(Shoe::BRANDS).to include(brands)
-    end
 end

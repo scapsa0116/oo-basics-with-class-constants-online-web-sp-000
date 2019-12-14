@@ -10,10 +10,8 @@ BRANDS = []
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
- brand.each_with_index do |brands, i|
-      shoe = Shoe.new("Shoe_#{i}")
-      shoe.brand = brand
-    end
+ 
+  
    brand.each do |brands|
         expect(Shoe::BRANDS).to include(brands)
     end
